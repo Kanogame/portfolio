@@ -18,6 +18,7 @@ body
     height: 60px;
     border-bottom: 1px solid lightgray;
     padding: 10px;
+    margin-bottom: 200px;
 }
 
 .header-content
@@ -68,57 +69,7 @@ body
     text-decoration: underline;
 }
 
-.main
-{
-    background-color: #32334C;
-    height: 700px;
-    padding: 100px;
-}
-
-.main-content
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.text
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.main-p
-{
-    color: #EF6D58;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 15px;
-}
-
-.main-h2
-{
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 64px;
-    color: white;
-    margin-bottom: 30px;
-}
-
-.main-h4
-{
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 30px;
-    color: white;
-    margin-bottom: 60px;
-}
-
-.main-buy
+.project-button
 {
     background-color:#EF6D58;
     height: 60px;
@@ -130,9 +81,19 @@ body
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
 }
 
-.my-pic
+.project-button:hover
 {
-    border-radius: 300px;
+    background-color:#e78e80;
+}
+
+.main
+{
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 100px;
+    justify-content: center;
 }
