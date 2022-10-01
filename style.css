@@ -179,14 +179,39 @@ body
 
 .backend
 {
-    height: 1000px;
-    width: 1000px;
+    width: 33%;
     border: 5px solid #EF6D58;
+    padding: 20px;
+}
+
+.backend-h
+{
+    background-color: #EF6D58;
+    height: 70px;
+    border: 10px solid #EF6D58;
+    border-radius: 10px;
 }
 
 .services-header
 {
-    height: 40px;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 5px solid #EF6D58;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.backend-h4
+{
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 1000px)
@@ -194,6 +219,16 @@ body
     .my-pic
     {
         display: none;
+    }
+
+    .backend
+    {
+        width: 100%;
+    }
+    
+    .services-choose
+    {
+        flex-direction: column;
     }
 }
 
@@ -248,5 +283,15 @@ body
     .main-buy
     {
         align-self:center;
+    }
+
+    .services
+    {
+        padding: 0;
+    }
+
+    .services-header
+    {
+        font-size: 16px;
     }
 }
