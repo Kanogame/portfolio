@@ -18,6 +18,7 @@ body
     height: 60px;
     border-bottom: 1px solid lightgray;
     padding: 10px;
+    background-color: #FDF0E9;
 }
 
 .header-content
@@ -49,6 +50,11 @@ body
     gap: 40px;
 }
 
+.header-tabs-replace
+{
+    display: none;
+}
+
 .header-a 
 {
     text-decoration: none;
@@ -71,7 +77,6 @@ body
 .main
 {
     background-color: #32334C;
-    height: 700px;
     padding: 100px;
 }
 
@@ -88,6 +93,7 @@ body
 {
     display: flex;
     flex-direction: column;
+    max-width: 50%;
 }
 
 .main-p
@@ -95,7 +101,7 @@ body
     color: #EF6D58;
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .main-h2
@@ -105,7 +111,7 @@ body
     font-weight: 700;
     font-size: 64px;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .main-h4
@@ -113,9 +119,9 @@ body
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 14px;
     color: white;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .main-buy
@@ -135,4 +141,112 @@ body
 .my-pic
 {
     border-radius: 300px;
+    height: 400px;
+}
+
+.services
+{
+    padding: 100px;
+    background-color: #FDF0E9;
+}
+
+.services-p
+{
+    color: #EF6D58;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+}
+
+.services-h2
+{
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 64px;
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.services-choose
+{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.backend
+{
+    height: 1000px;
+    width: 1000px;
+    border: 5px solid #EF6D58;
+}
+
+.services-header
+{
+    height: 40px;
+}
+
+@media (max-width: 1000px)
+{
+    .my-pic
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .header-content
+    {
+        justify-content: center;
+    }
+
+    .header-tabs-replace
+    {
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+
+    .header-tabs
+    {
+        display: none;
+    }
+    
+    .main
+    {
+        padding: 20px 50px 50px 50px;
+    }
+
+    .text
+    {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .main-h2
+    {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .main-h4
+    {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .main-p
+    {
+        display: none;
+    }
+
+    .main-buy
+    {
+        align-self:center;
+    }
 }
